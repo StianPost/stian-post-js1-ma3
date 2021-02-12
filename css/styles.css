@@ -1,10 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .alert {
   width: 100%;
 }
 
 .danger {
   background-color: rgb(255 124 124);
-  color: red;
   border: solid 1px red;
   padding: 20px;
   transition: 2s;
@@ -12,7 +17,6 @@
 
 .success {
   background-color: rgb(148, 247, 139);
-  color: darkgreen;
   border: solid 1px darkgreen;
   padding: 20px;
   transition: 2s;
@@ -20,7 +24,6 @@
 
 .warning {
   background-color: rgb(255, 200, 80);
-  color: orange;
   border: solid 1px orange;
   padding: 20px;
   transition: 2s;
@@ -28,8 +31,23 @@
 
 .information {
   background-color: rgb(108, 238, 255);
-  color: blue;
   border: solid 1px blue;
   padding: 20px;
   transition: 2s;
+}
+
+.gamesDiv {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.individualGame {
+  border: black 2px solid;
+  border-radius: 5px;
+  background-color: lightblue;
+  margin: 5px;
+  padding: 5px;
+  width: 300px;
+  min-height: 100px;
+  line-height: 30px;
 }
