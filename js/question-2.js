@@ -19,6 +19,7 @@ async function getGames(url) {
         <h2> ${resultArray[i].name} </h2>
         <p><span>Rating:</span> ${resultArray[i].rating} </p>
         <p><span>Number of Tags:</span> ${resultArray[i].tags.length}</p>
+        <img class="gameImg" src="${resultArray[i].background_image}" alt="Image from the game: ${resultArray[i].name} ">
         `;
     }
   } catch (error) {
