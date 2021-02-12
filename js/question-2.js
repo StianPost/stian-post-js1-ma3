@@ -10,19 +10,23 @@ async function getGames(url) {
     const result = await response.json();
     const resultArray = result.results;
     document.querySelector('.loading').innerHTML = '';
-    resultArray.forEach((element) => {
+    for (let i = 0; i < resultArray.length; i++) {
+      if (i === 8) {
+        break;
+      }
       gamesDiv.innerHTML += `
         <div class="individualGame">
-        <h2> ${element.name} </h2>
-        <p>Rating: ${element.rating} </p>
-        <p>Tags: ${element.tags.length}</p>
+        <h2> ${resultArray[i].name} </h2>
+        <p>Rating: ${resultArray[i].rating} </p>
+        <p>Tags: ${resultArray[i].tags.length}</p>
         `;
-    });
+    }
   } catch (error) {
     document.querySelector('.alert').innerHTML = showAlertTouser(
       'Woops, something is wrong, contact the system admin and the monkeys will get to work!',
       'danger'
     );
+    console.log(error);
   } finally {
     setTimeout(function () {
       document.querySelector('.alert').innerHTML = '';
