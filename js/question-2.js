@@ -17,8 +17,8 @@ async function getGames(url) {
       gamesDiv.innerHTML += `
         <div class="individualGame">
         <h2> ${resultArray[i].name} </h2>
-        <p>Rating: ${resultArray[i].rating} </p>
-        <p>Tags: ${resultArray[i].tags.length}</p>
+        <p><span>Rating:</span> ${resultArray[i].rating} </p>
+        <p><span>Number of Tags:</span> ${resultArray[i].tags.length}</p>
         `;
     }
   } catch (error) {
