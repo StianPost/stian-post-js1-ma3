@@ -47,17 +47,21 @@ span {
   flex-wrap: wrap;
 }
 
-.individualGame {
+.gamesCard {
   border: black 2px solid;
   border-radius: 5px;
   background-color: lightblue;
   margin: 5px;
   padding: 5px;
-  width: 300px;
+  width: 400px;
+  display: flex;
 }
 
-.individualGame:hover {
+.gamesCard:hover {
   background-color: lightskyblue;
+}
+.gamesCardInfo {
+  width: 50%;
 }
 
 .gameImg {
@@ -67,5 +71,12 @@ span {
   box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 5px;
 }
 .gameImg:hover {
-  box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 5px;
+  height: 250px;
+  max-width: 400px;
+}
+.ratings {
+  margin-left: 5px;
+}
+.ratingsBlock {
+  margin-top: 10px;
 }
