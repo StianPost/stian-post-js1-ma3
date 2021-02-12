@@ -9,6 +9,7 @@ async function getGames(url) {
     const response = await fetch(url);
     const result = await response.json();
     const resultArray = result.results;
+    document.querySelector('.loading').innerHTML = '';
     resultArray.forEach((element) => {
       gamesDiv.innerHTML += `
         <div class="individualGame">

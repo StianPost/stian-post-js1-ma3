@@ -51,3 +51,7 @@
   min-height: 100px;
   line-height: 30px;
 }
+
+.individualGame:hover {
+  background-color: violet;
+}
